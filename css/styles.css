@@ -329,12 +329,18 @@ img {
   fill: #ffffff;
 }
 
-.regular-clients {
+.clients-link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 170px;
   height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients-link:hover,
+.clients-link:focus {
+  border-color: #2196f3;
 }
 
 .clients-list {
@@ -345,6 +351,11 @@ img {
 
 .clients-link-icon {
   fill: #afb1b8;
+}
+
+.clients-link:hover .clients-link-icon,
+.clients-link:focus .clients-link-icon {
+  fill: #2196f3;
 }
 /*main end*/
 
