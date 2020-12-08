@@ -141,9 +141,31 @@ img {
 .address-mail-link:focus {
   color: #2196f3;
 }
+
 .address-tel-link:hover,
 .address-tel-link:focus {
   color: #2196f3;
+}
+.address-mail-link:hover .envelope-icon,
+.address-mail-link:focus .envelope-icon {
+  fill: #2196f3;
+}
+
+.address-tel-link:hover .tel-icon,
+.address-tel-link:focus .tel-icon {
+  fill: #2196f3;
+}
+
+.address-mail-link,
+.address-tel-link {
+  display: flex;
+  align-items: center;
+}
+
+.envelope-icon,
+.tel-icon {
+  margin-right: 10px;
+  fill: #757575;
 }
 /*header end*/
 
@@ -152,7 +174,15 @@ img {
   background-color: #2f303a;
   padding-top: 224px;
   padding-bottom: 176px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .hero-title {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
@@ -200,8 +230,19 @@ img {
   color: #757575;
 }
 
+.dignity-icon-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+}
+
 .occupation-title,
-.team-title {
+.team-title,
+.clients-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -239,6 +280,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-bottom: 16px;
 }
 
 .team .list {
@@ -247,10 +289,62 @@ img {
 
 .team-list-member:not(:last-child) {
   margin-right: 30px;
+  background-color: #ffffff;
 }
 .team-member-list-wraper {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  color: #f5f4fa;
+  background-color: #2196f3;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+.social-list:not(:last-child) {
+  margin-right: 10px;
+}
+.social-link-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.social-list-link:hover .social-link-icon,
+.social-list-link:focus .social-link-icon {
+  fill: #ffffff;
+}
+
+.regular-clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.clients-link-icon {
+  fill: #afb1b8;
 }
 /*main end*/
 
