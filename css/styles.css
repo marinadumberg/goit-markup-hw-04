@@ -289,11 +289,14 @@ img {
 
 .team-list-member:not(:last-child) {
   margin-right: 30px;
-  background-color: #ffffff;
 }
+.team-list-member {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .team-member-list-wraper {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 32px;
 }
 .social-list-link {
   display: flex;
@@ -423,6 +426,59 @@ img {
 .footer-address-list-mail {
   margin-bottom: 9px;
 }
+
+.social-list-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin-bottom: 100px;
+}
+
+.social-list-link-footer:hover,
+.social-list-link-footer:focus {
+  color: #f5f4fa;
+  background-color: #2196f3;
+}
+
+.social-list-footer {
+  display: flex;
+}
+.social-list-item-footer:not(:last-child) {
+  margin-right: 10px;
+}
+.social-link-icon-footer {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.social-list-link-footer:hover .social-link-icon-footer,
+.social-list-link-footer:focus .social-link-icon-footer {
+  fill: #ffffff;
+}
+
+.join-us {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.join {
+  margin-left: 70px;
+}
+.footer-wrapper {
+  display: flex;
+}
+
 /*footer end*/
 
 /*portfolio*/
@@ -441,6 +497,7 @@ img {
   margin-bottom: 34px;
   margin-right: 8px;
 }
+
 .all {
   weight: 73px;
   height: 38px;
@@ -494,6 +551,8 @@ img {
 .button-list:focus {
   color: #f5f4fa;
   background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button {
   display: flex;
@@ -502,6 +561,12 @@ img {
 .gallery-list {
   display: inline;
   border: 1px solid #eeeeee;
+}
+
+.gallery-list:hover,
+.gallery-list:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .gallery {
